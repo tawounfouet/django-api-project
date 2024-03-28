@@ -47,7 +47,9 @@ INSTALLED_APPS = [
     'django.contrib.gis',
     'rest_framework',
     'rest_framework_gis',
+    'rest_framework.authtoken',
     'corsheaders',
+    'djoser',
 
     # Local apps
     'listings',
@@ -165,3 +167,9 @@ CORS_ALLOWED_ORIGINS = [
 
 
 CORS_ALLOWED_ALL_ORIGINS = True
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.TokenAuthentication',
+    ),
+}
