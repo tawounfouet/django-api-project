@@ -2,3 +2,12 @@
 
 
 .venv/
+
+_venv/
+
+*.pyc
+__pycache__/
+
+# Ignore Django migrations
+**/migrations/*.py
+**/migrations/*.pyc

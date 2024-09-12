@@ -6,7 +6,7 @@ from django.contrib.gis.geos import Point
 class PoisForm(forms.ModelForm):
     class Meta:
         model = Poi
-        fields = ['name', 'type', 'location', 'latitude', 'longitude']
+        fields = ['name', 'type', 'latitude', 'longitude']
 
     latitude = forms.FloatField()
     longitude = forms.FloatField()
