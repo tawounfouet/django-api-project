@@ -17,17 +17,7 @@ ALLOWED_HOSTS = ['*']
 #     }
 # }
 
-# PostGIS database settings
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.contrib.gis.db.backends.postgis',
-#         'NAME': 'django_pg_api_db',
-#         'USER': 'postgres',
-#         'PASSWORD': 'Divalt&2013',
-#         'HOST': '52.143.134.24', # 127.0.0.1
-#         'PORT': '5432',
-#     }
-# }
+
 
 # pip install dj-database-url
 import dj_database_url
